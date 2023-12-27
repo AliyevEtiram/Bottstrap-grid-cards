@@ -1,0 +1,170 @@
+@import "./reset";
+@import "./mixins";
+@import "./variables";
+
+.ckarts {
+   padding: 20px 0;
+
+.row{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+    
+    @include tablet{
+        gap: 35px;
+    }
+}
+
+    &__conainer {
+        display: flex;
+        align-items: center;
+        width: 513px;
+
+        @include tablet{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        &-photo {
+            position: relative;
+            width: 210px;
+
+            &-icon {
+                position: absolute;
+                top: 20px;
+                left: 10px;
+            }
+
+            &-cont {
+                position: absolute;
+                bottom: 20px;
+                left: 43px;
+
+                &-btn {
+                    border-radius: 44.786px;
+                    background: var(--light-background-color, #fff);
+                    width: 40px;
+                    height: 40px;
+                    padding: var(--Number, 10px);
+                    border: none;
+                    transition: 0.1s;
+
+                    &:hover {
+                        filter: brightness(60%);
+
+                        &:active {
+                            transform: scale(1.1);
+                            filter: brightness(80%);
+                        }
+                    }
+
+                    &-icon {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        &-infos {
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+
+            @include tablet{
+                padding: 0;
+            }
+
+            &-reytinq {
+                align-items: center;
+                justify-content: space-between;
+                display: flex;
+                gap: 64px;
+
+                &-name {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 171.429% */
+                    letter-spacing: 0.2px;
+                    color: var(--primary-text-color, #23a6f0);
+                }
+            }
+
+            &-name {
+                color: var(--text-color, #252b42);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px; /* 150% */
+                letter-spacing: 0.1px;
+            }
+
+            &-text {
+                color: var(--second-text-color, #737373);
+                /* paragraph */
+                width: 98%;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+                letter-spacing: 0.2px;
+            }
+
+            &-icons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 19px;
+
+                &-icon {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    &-title {
+                        color: var(--second-text-color, #737373);
+                        /* small */
+
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16px; /* 133.333% */
+                        letter-spacing: 0.2px;
+                    }
+                }
+            }
+
+            &-btn {
+                border-radius: 37px;
+                border: 1px solid var(--primary-color, #23a6f0);
+                padding: 10px 20px;
+                background-color: transparent;
+                color: var(--primary-color, #23a6f0);
+
+                /* h6 */
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px; /* 171.429% */
+                letter-spacing: 0.2px;
+                transition: .5s;
+
+                &:hover{
+                    background-color:#23a6f0 ;
+                    color: #fff;
+                    
+                    &:active{
+                        transform: scale(1.1);
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.ckarts {
+  padding: 20px 0;
+}
+.ckarts .row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+@media (max-width: 768px) {
+  .ckarts .row {
+    gap: 35px;
+  }
+}
+.ckarts__conainer {
+  display: flex;
+  align-items: center;
+  width: 513px;
+}
+@media (max-width: 768px) {
+  .ckarts__conainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+.ckarts__conainer-photo {
+  position: relative;
+  width: 210px;
+}
+.ckarts__conainer-photo-icon {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.ckarts__conainer-photo-cont {
+  position: absolute;
+  bottom: 20px;
+  left: 43px;
+}
+.ckarts__conainer-photo-cont-btn {
+  border-radius: 44.786px;
+  background: var(--light-background-color, #fff);
+  width: 40px;
+  height: 40px;
+  padding: var(--Number, 10px);
+  border: none;
+  transition: 0.1s;
+}
+.ckarts__conainer-photo-cont-btn:hover {
+  filter: brightness(60%);
+}
+.ckarts__conainer-photo-cont-btn:hover:active {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+.ckarts__conainer-photo-cont-btn-icon {
+  width: 100%;
+  height: 100%;
+}
+.ckarts__conainer-infos {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .ckarts__conainer-infos {
+    padding: 0;
+  }
+}
+.ckarts__conainer-infos-reytinq {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  gap: 64px;
+}
+.ckarts__conainer-infos-reytinq-name {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.2px;
+  color: var(--primary-text-color, #23a6f0);
+}
+.ckarts__conainer-infos-name {
+  color: var(--text-color, #252b42);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+}
+.ckarts__conainer-infos-text {
+  color: var(--second-text-color, #737373);
+  /* paragraph */
+  width: 98%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+.ckarts__conainer-infos-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 19px;
+}
+.ckarts__conainer-infos-icons-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ckarts__conainer-infos-icons-icon-title {
+  color: var(--second-text-color, #737373);
+  /* small */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.2px;
+}
+.ckarts__conainer-infos-btn {
+  border-radius: 37px;
+  border: 1px solid var(--primary-color, #23a6f0);
+  padding: 10px 20px;
+  background-color: transparent;
+  color: var(--primary-color, #23a6f0);
+  /* h6 */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.2px;
+  transition: 0.5s;
+}
+.ckarts__conainer-infos-btn:hover {
+  background-color: #23a6f0;
+  color: #fff;
+}
+.ckarts__conainer-infos-btn:hover:active {
+  transform: scale(1.1);
+}/*# sourceMappingURL=styl_2.css.map */

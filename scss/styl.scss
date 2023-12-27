@@ -1,0 +1,137 @@
+@import "./mixins";
+@import "./variables";
+@import "./reset";
+
+
+
+.ckarts {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__conteyners {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            gap: 30px;
+            justify-content: center;
+        }
+        &-conteyner {
+            padding: 0;
+            width: 466px;
+            flex-direction: column;
+            gap: 15px;
+            display: flex;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+            &-photo {
+                position: relative;
+
+                &-img {
+                    width: 100%;
+                }
+
+                &-icon {
+                    position: absolute;
+                    top: 20px;
+                    left: 10px;
+                }
+            }
+
+            &-socseti {
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                &-click {
+                    color: var(--second-text-color, #737373);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px; /* 133.333% */
+                    letter-spacing: 0.2px;
+
+                    &:hover {
+                        color: var(--disabled-element-color, #8ec2f2);
+                    }
+                }
+            }
+            &-name {
+                width: 86%;
+                padding: 0 20px;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; /* 150% */
+                letter-spacing: 0.2px;
+            }
+
+            &-text {
+                width: 59%;
+                padding: 0 20px;
+                color: var(--second-text-color, #737373);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+                letter-spacing: 0.2px;
+            }
+
+            &-info {
+                padding: 0 20px;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+
+                &-chisi {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 8px;
+
+                    &-time {
+                        color: var(--second-text-color, #737373);
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16px; /* 133.333% */
+                        letter-spacing: 0.2px;
+                    }
+                }
+
+                &-qrafik {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 8px;
+
+                    &-time {
+                        color: var(--second-text-color, #737373);
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16px; /* 133.333% */
+                        letter-spacing: 0.2px;
+                    }
+                }
+            }
+
+            &-more {
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                padding-bottom: 10px;
+
+                &-name {
+                    color: var(--second-text-color, #737373);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 171.429% */
+                    letter-spacing: 0.2px;
+                }
+            }
+        }
+    }
+}
