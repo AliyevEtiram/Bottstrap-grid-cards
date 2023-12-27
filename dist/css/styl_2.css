@@ -50,6 +50,15 @@ table {
   border-spacing: 0;
 }
 
+#hed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hed .but {
+  width: 50%;
+}
+
 .ckarts {
   padding: 20px 0;
 }
@@ -74,6 +83,11 @@ table {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .ckarts__conainer {
+    padding: 0 30px;
   }
 }
 .ckarts__conainer-photo {

@@ -2,6 +2,15 @@
 @import "./mixins";
 @import "./variables";
 
+#hed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .but{
+        width: 50%;
+    }
+}
+
 .ckarts {
    padding: 20px 0;
 
@@ -25,6 +34,10 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 20px;
+        }
+
+        @include mobile{
+            padding: 0 30px;
         }
 
         &-photo {

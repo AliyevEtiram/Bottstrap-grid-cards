@@ -50,6 +50,15 @@ table {
   border-spacing: 0;
 }
 
+#hed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hed .but {
+  width: 50%;
+}
+
 .ckarts {
   padding-top: 20px;
   display: flex;

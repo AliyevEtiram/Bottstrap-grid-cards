@@ -2,7 +2,14 @@
 @import "./variables";
 @import "./reset";
 
-
+#hed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .but{
+        width: 50%;
+    }
+}
 
 .ckarts {
     padding-top: 20px;
