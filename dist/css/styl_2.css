@@ -62,6 +62,11 @@ table {
 .ckarts {
   padding: 20px 0;
 }
+@media (max-width: 575px) {
+  .ckarts {
+    overflow: hidden;
+  }
+}
 .ckarts .row {
   align-items: center;
   display: flex;

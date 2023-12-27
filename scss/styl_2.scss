@@ -13,6 +13,9 @@
 
 .ckarts {
    padding: 20px 0;
+   @include mobile{
+    overflow: hidden;
+}
 
 .row{
     align-items: center;

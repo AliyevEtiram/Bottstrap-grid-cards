@@ -2,17 +2,20 @@
 @import "./variables";
 @import "./reset";
 
-#hed{
+#hed {
     display: flex;
     align-items: center;
     justify-content: center;
-    .but{
+    .but {
         width: 50%;
     }
 }
 
 .ckarts {
     padding: 40px 0;
+    @include mobile{
+        overflow: hidden;
+    }
 
     display: flex;
     flex-direction: column;
@@ -34,7 +37,11 @@
             gap: 15px;
             display: flex;
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+            @include tablet {
+                width: 90%;
+            }
 
+           
             &-photo {
                 position: relative;
 
