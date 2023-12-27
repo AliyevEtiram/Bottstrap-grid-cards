@@ -12,7 +12,8 @@
 }
 
 .ckarts {
-    padding-top: 20px;
+    padding: 40px 0;
+
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -20,6 +21,7 @@
     &__conteyners {
         display: flex;
         justify-content: space-between;
+        row-gap: 30px;
 
         @include tablet {
             gap: 30px;
